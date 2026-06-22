@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className='text-green text-underline font-3xl'>Welcome to Home page of Nextnix.</div>
+    <div className='text-green-500 underline text-3xl'>Welcome to Home page of Nextnix.</div>
   )
 }
 
