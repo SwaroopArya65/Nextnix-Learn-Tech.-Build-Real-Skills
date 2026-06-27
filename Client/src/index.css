@@ -1,1 +1,138 @@
+/* ── Tailwind v4 Import ── */
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@theme {
+    --font-inter: "Inter", sans-serif;
+    --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+
+
+@layer utilities {
+
+    /*
+   * nn-bg-dark-grid
+   * Base: Navy #051d67
+   * Blobs: Green glow — 3 positions
+   * Grid: Subtle green lines
+   */
+    .nn-bg-dark-grid {
+        /* background-color: #051d67; */
+        background-image:
+            radial-gradient(ellipse at 20% 30%, rgba(94, 229, 135, 0.15) 0%, transparent 60%),
+            radial-gradient(ellipse at 80% 10%, rgba(94, 229, 135, 0.08) 0%, transparent 55%),
+            radial-gradient(ellipse at 50% 90%, rgba(94, 229, 135, 0.10) 0%, transparent 45%),
+            linear-gradient(rgba(94, 229, 135, 0.06) 2px, transparent 2px),
+            linear-gradient(90deg, rgba(94, 229, 135, 0.06) 2px, transparent 2px);
+        background-size: auto, auto, auto, 64px 64px, 64px 64px;
+    }
+
+    /*
+   * nn-bg-light-grid
+   * Base: White #ffffff
+   * Blobs: Green + Navy glow — 3 positions
+   * Grid: Subtle navy lines
+   */
+    .nn-bg-light-grid {
+        background-color: #ffffff;
+        background-image:
+            radial-gradient(ellipse at 15% 20%, rgba(94, 229, 135, 0.15) 0%, transparent 50%),
+            radial-gradient(ellipse at 85% 10%, rgba(5, 29, 103, 0.08) 0%, transparent 45%),
+            radial-gradient(ellipse at 60% 85%, rgba(94, 229, 135, 0.08) 0%, transparent 40%),
+            linear-gradient(rgba(5, 29, 103, 0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(5, 29, 103, 0.04) 1px, transparent 1px);
+        background-size: auto, auto, auto, 64px 64px, 64px 64px;
+    }
+
+    /*
+   * nn-bg-gray-grid
+   * Base: Light gray #f4f6fb
+   * Blobs: Green + Navy glow — 2 positions
+   * Grid: Subtle navy lines
+   */
+    .nn-bg-gray-grid {
+        background-color: #f4f6fb;
+        background-image:
+            radial-gradient(ellipse at 80% 20%, rgba(94, 229, 135, 0.12) 0%, transparent 50%),
+            radial-gradient(ellipse at 20% 80%, rgba(5, 29, 103, 0.06) 0%, transparent 45%),
+            linear-gradient(rgba(5, 29, 103, 0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(5, 29, 103, 0.04) 1px, transparent 1px);
+        background-size: auto, auto, 64px 64px, 64px 64px;
+    }
+
+}
+ /* animate-text-glow */
+@keyframes textGlow {
+
+    0%,
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 0 rgba(94, 229, 135, 0);
+    }
+
+    50% {
+        opacity: 0.85;
+        text-shadow:
+            0 0 8px rgba(94, 229, 135, 0.7),
+            0 0 16px rgba(94, 229, 135, 0.5);
+    }
+}
+
+.animate-text-glow {
+    animation: textGlow 2s ease-in-out infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 25s linear infinite;
+    will-change: transform;
+}
+
+/* Pause when user hovers */
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+/* animate-typing  */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.animate-typing {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(35, end) forwards;
+}
+
+
+/* ══════════════════════════════════════════════════════
+   SCROLLBAR
+══════════════════════════════════════════════════════ */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #051d67;
+    border-radius: 3px;
+}
