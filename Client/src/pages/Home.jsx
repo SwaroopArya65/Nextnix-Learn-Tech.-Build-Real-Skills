@@ -105,25 +105,25 @@ function Home() {
             icon: Laptop,
             title: "Practical Learning",
             description:
-                "Build real projects while learning concepts step by step.",
+                "No theory overload — every concept is taught through real projects you can show in your portfolio.",
         },
         {
             icon: Rocket,
             title: "Industry Relevant",
             description:
-                "Learn skills that match real-world requirements and modern technologies.",
+                "We teach only what the industry actually uses — no outdated tools, no wasted time.",
         },
         {
             icon: Users,
             title: "Community Support",
             description:
-                "Learn together, ask questions, and grow with fellow learners.",
+                "You're never learning alone — get help, share progress, and grow with fellow beginners.",
         },
         {
             icon: Map,
             title: "Structured Roadmaps",
             description:
-                "Follow clear learning paths without confusion or information overload.",
+                "No confusion about what to learn next — follow a clear step-by-step path to your tech career.",
         },
     ];
 
@@ -184,12 +184,12 @@ function Home() {
         {
             icon: GraduationCap,
             title: "College Workshops",
-            status: "Coming Soon",
+            status: "Join Waitlist",
         },
         {
             icon: Building2,
             title: "Corporate Training",
-            status: "Coming Soon",
+            status: "Join Waitlist",
         },
     ];
 
@@ -233,7 +233,7 @@ function Home() {
                 />
             </Helmet>
 
-            <div className="nn-bg-light-grid overflow-hidden bg-white/60">
+            <div className="nn-bg-light-grid overflow-hidden">
                 {/* ================================= */}
                 {/* Hero Section */}
                 {/* ================================= */}
@@ -293,8 +293,8 @@ function Home() {
                             }}
                             className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl font-inter tracking-wide"
                         >
-                            Beginner-friendly education platform helping students learn Coding,
-                            Networking, and System Administration through practical projects.
+                            From YouTube to classroom — India's beginner-first platform for real tech skills & real direction. 
+                            No experience needed. No expensive laptop needed. Just the will to learn — we'll handle the rest.
                         </motion.p>
 
                         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -375,7 +375,7 @@ function Home() {
 
                                 <div>
                                     <h3 className="animate-pulse font-inter tracking-wide text-lg font-semibold text-[#051D67]">
-                                        Live Sessions
+                                        Free Live Sessions
                                     </h3>
 
                                     <p className="font-inter tracking-wide text-slate-600">
@@ -439,7 +439,7 @@ function Home() {
                             className="mx-auto max-w-3xl text-center"
                         >
                             <span className="inline-flex rounded-full border border-[#5EE587]/30 bg-white/10 px-4 py-2 text-sm font-medium text-[#051D67] font-inter tracking-wider backdrop-blur-md">
-                                Why Choose Nextnix
+                                What Makes Nextnix Different?
                             </span>
 
                             <h2 className="mt-6 text-4xl font-semibold text-[#051D67] md:text-5xl lg:text-6xl font-space-grotesk tracking-wide ">
