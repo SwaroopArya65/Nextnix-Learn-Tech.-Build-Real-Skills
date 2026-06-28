@@ -130,25 +130,25 @@ function Home() {
     const topics = [
         {
             icon: Code2,
-            title: "Coding",
+            title: "Learn Coding",
             description:
-                "Build websites, APIs, and full-stack applications using modern technologies.",
+                "Learn modern programming through step-by-step tutorials and hands-on practice.",
             level: "Beginner → Advanced",
             path: "/learn/coding",
         },
         {
             icon: Globe,
-            title: "CCNA",
+            title: "Career Guidance",
             description:
-                "Learn networking fundamentals, routing, switching, and infrastructure management.",
+                "Navigate your tech journey with expert guidance, placement tips, and career roadmaps.",
             level: "Beginner → Intermediate",
             path: "/learn/ccna",
         },
         {
             icon: Monitor,
-            title: "Windows Admin",
+            title: "Real Projects",
             description:
-                "Manage servers, Active Directory, and enterprise Windows environments.",
+                "Turn knowledge into experience by building practical, industry-inspired applications.",
             level: "Beginner → Advanced",
             path: "/learn/windows-admin",
         },
@@ -156,20 +156,23 @@ function Home() {
 
     const videos = [
         {
-            title: "React Roadmap for Beginners",
-            duration: "18 min",
+            title: "Learn Coding From Zero",
+            videos: "40+ Videos",
+            description: "Master programming fundamentals and build modern web applications with beginner-friendly tutorials.",
             playlistUrl:
                 "https://www.youtube.com/playlist?list=PLgR80RvbSd3Kvu4RaAwcShZvXOiFxyEZw",
         },
         {
-            title: "Build a MERN Project from Scratch",
-            duration: "42 min",
+            title: "Career Guidance & Placements",
+            videos: "20+ Videos",
+            description: "Learn career planning, placement preparation, interview tips, and choose the right path in tech.",
             playlistUrl:
                 "https://www.youtube.com/playlist?list=PLgR80RvbSd3K8gSFTTBxiifPX5sGtki03",
         },
         {
-            title: "CCNA Networking Fundamentals",
-            duration: "25 min",
+            title: "Real Project Explanations",
+            videos: "15+ Videos",
+            description: "Build real-world projects from scratch and understand how professional applications are developed.",
             playlistUrl:
                 "https://youtube.com/playlist?list=CCNA_PLAYLIST_ID",
         },
@@ -179,17 +182,44 @@ function Home() {
         {
             icon: MonitorPlay,
             title: "Live Classes",
-            status: "Available",
+            description:
+                "Learn directly from experienced instructors through live, interactive online sessions.",
+            features: [
+                "Live Q&A Sessions",
+                "Project-Based Learning",
+                "Community Support",
+            ],
+            status: "Enroll Now",
+            buttonText: "Join Live Batch",
+            path: "/services/live-classes",
         },
         {
             icon: GraduationCap,
             title: "College Workshops",
+            description:
+                "Practical workshops conducted in colleges to bridge the gap between academics and industry.",
+            features: [
+                "Hands-on Sessions",
+                "Industry Experts",
+                "Certification",
+            ],
             status: "Join Waitlist",
+            buttonText: "Request Workshop",
+            path: "/services/college-workshops",
         },
         {
             icon: Building2,
             title: "Corporate Training",
-            status: "Join Waitlist",
+            description:
+                "Upskill teams with customized training programs tailored to industry requirements.",
+            features: [
+                "Customized Curriculum",
+                "Team Training",
+                "Professional Certification",
+            ],
+            status: "Join Watilist",
+            buttonText: "Contact Us",
+            path: "/services/corporate-training",
         },
     ];
 
@@ -277,7 +307,7 @@ function Home() {
                                 y: 0,
                             }}
                             transition={{ duration: 0.6 }}
-                            className="mx-auto max-w-5xl font-space-grotesk text-4xl font-extrabold leading-none tracking-tight text-[#051D67] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
+                            className="mx-auto max-w-5xl font-space-grotesk text-4xl font-extrabold leading-none tracking-wide text-[#051D67] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
                         >
                             Learn Tech.
                             <br />
@@ -293,7 +323,7 @@ function Home() {
                             }}
                             className="mx-auto mt-6 max-w-3xl px-2 text-base leading-7 text-slate-600 font-inter tracking-normal sm:text-lg md:mt-8 md:text-xl md:leading-8"
                         >
-                            From YouTube to classroom — India's beginner-first platform for real tech skills & real direction. 
+                            From YouTube to classroom — India's beginner-first platform for real tech skills & real direction.
                             No experience needed. No expensive laptop needed. Just the will to learn — we'll handle the rest.
                         </motion.p>
 
@@ -526,14 +556,13 @@ function Home() {
                             </span>
 
                             <h2 className="mt-6 text-4xl font-semibold text-[#051D67] md:text-5xl font-space-grotesk tracking-wider">
-                                Learn Technologies That
+                                Choose Your
                                 <br />
-                                Power Modern Careers
+                                Learning Journey
                             </h2>
 
                             <p className="mx-auto mt-6 max-w-xl text-lg font-inter tracking-wide leading-8 text-slate-600">
-                                Explore beginner-friendly learning paths designed to help you
-                                develop practical skills and build real-world projects.
+                                Everything you need to learn, build, and grow your career in technology, all in one place.
                             </p>
                         </motion.div>
 
@@ -610,7 +639,7 @@ function Home() {
                 </section>
 
                 {/* ================================= */}
-                {/* Latest Videos */}
+                {/* Latest Playlists */}
                 {/* ================================= */}
 
                 <section className="relative py-24">
@@ -618,17 +647,17 @@ function Home() {
                         {/* Heading */}
                         <div className="text-center">
                             <span className="rounded-full border border-[#5EE587]/30 bg-white/10 px-4 py-2 text-sm font-medium font-inter tracking-wide text-[#051D67] backdrop-blur-md">
-                                Latest Videos
+                                Latest Playlists
                             </span>
 
                             <h2 className="mt-6 text-4xl font-semibold font-space-grotesk tracking-wide text-[#051D67] md:text-5xl">
-                                Learn Through
+                                Start Learning with
                                 <br />
-                                Practical Tutorials
+                                Our Most Popular Playlists
                             </h2>
 
                             <p className="mx-auto mt-6 max-w-2xl text-lg font-space-grotesk tracking-wide text-slate-600">
-                                Watch step-by-step tutorials and build projects with us.
+                                Explore step-by-step playlists designed to help beginners learn practical skills, build real projects, and grow their careers.
                             </p>
                         </div>
 
@@ -667,19 +696,13 @@ function Home() {
                                             {video.title}
                                         </h3>
 
-                                        <Play
-                                            size={20}
-                                            className="
-                                            text-[#5EE587]
-                                            transition-transform
-                                            duration-300
-                                            group-hover:scale-110
-                                            "
-                                        />
+                                        <p className="mx-auto mt-6 max-w-xl text-lg font-inter tracking-wide leading-8 text-slate-600">
+                                            {video.description}
+                                        </p>
 
                                         <div className="mt-4 flex items-center font-inter tracking-wide gap-2 text-slate-600">
                                             <Clock size={18} />
-                                            {video.duration}
+                                            {video.videos}
                                         </div>
                                     </div>
                                 </motion.div>
@@ -703,14 +726,17 @@ function Home() {
                     <div className="mx-auto max-w-7xl px-6">
                         <div className="text-center">
                             <span className="rounded-full border border-[#5EE587]/30 bg-white/10 px-4 py-2 text-sm font-medium font-inter tracking-wide text-[#051D67] backdrop-blur-md">
-                                Services
+                                Our Services
                             </span>
 
                             <h2 className="mt-6 text-4xl font-semibold font-space-grotesk tracking-wide text-[#051D67] md:text-5xl">
-                                Learn Today.
+                                Helping You
                                 <br />
-                                Grow Tomorrow.
+                                Learn Beyond YouTube.
                             </h2>
+                            <p className="mx-auto mt-6 max-w-2xl text-lg font-space-grotesk tracking-wide text-slate-600">
+                                Whether you're an individual learner, a college, or an organization, Nextnix offers practical learning experiences designed to build real-world skills.
+                            </p>
                         </div>
 
                         <div className="mt-20 grid gap-8 md:grid-cols-3">
@@ -721,19 +747,54 @@ function Home() {
                                     <motion.div
                                         key={index}
                                         whileHover={{ y: -8 }}
-                                        className="rounded-4xl border border-[#5EE587]/20 bg-white/10 p-10 backdrop-blur-xl"
+                                        className="flex flex-col rounded-4xl border border-[#5EE587]/20 bg-white/10 p-10 backdrop-blur-xl transition-all duration-300"
                                     >
-                                        <div className="inline-flex rounded-2xl bg-[#5EE587]/15 p-4 text-[#051D67]">
+                                        {/* Icon */}
+                                        <div className="inline-flex w-fit rounded-2xl bg-[#5EE587]/15 p-4 text-[#051D67]">
                                             <Icon size={34} />
                                         </div>
 
+                                        {/* Title */}
                                         <h3 className="mt-8 text-2xl font-semibold font-inter tracking-wide text-[#051D67]">
                                             {service.title}
                                         </h3>
 
-                                        <span className="mt-6 inline-block rounded-full font-inter tracking-wide bg-[#5EE587]/15 px-4 py-2 text-sm font-medium text-[#051D67]">
-                                            {service.status}
-                                        </span>
+                                        {/* Description */}
+                                        <p className="mt-4 leading-7 font-inter tracking-wide text-slate-600">
+                                            {service.description}
+                                        </p>
+
+                                        {/* Features */}
+                                        <ul className="mt-6 space-y-3">
+                                            {service.features.map((feature, i) => (
+                                                <li
+                                                    key={i}
+                                                    className="flex items-center gap-3 text-sm font-inter text-slate-700"
+                                                >
+                                                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#5EE587]/20 text-[#051D67]">
+                                                        ✓
+                                                    </span>
+                                                    {feature}
+                                                </li>
+                                            ))}
+                                        </ul>
+
+                                        {/* Footer */}
+                                        <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+
+                                            <span className="inline-flex w-fit items-center justify-center rounded-full bg-[#5EE587]/15 px-4 py-2 text-sm font-medium font-inter text-[#051D67]">
+                                                {service.status}
+                                            </span>
+
+                                            <button
+                                                onClick={() => navigate(service.path)}
+                                                className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#051D67] px-5 py-3 font-semibold font-inter text-[#051D67] transition-all duration-300 hover:bg-[#051D67] hover:text-white sm:w-auto cursor-pointer"
+                                            >
+                                                Learn More
+                                                <ArrowRight size={18} />
+                                            </button>
+
+                                        </div>
                                     </motion.div>
                                 );
                             })}

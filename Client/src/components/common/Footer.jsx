@@ -31,12 +31,12 @@ const socialLinks = [
     },
     {
         name: "GitHub",
-        href: "https://github.com/nextnixtech",
+        href: "https://github.com/SwaroopArya65",
         icon: Code2,
     },
     {
         name: "LinkedIn",
-        href: "https://linkedin.com/company/nextnix",
+        href: "https://www.linkedin.com/jobs/",
         icon: Briefcase,
     },
     {
@@ -47,13 +47,10 @@ const socialLinks = [
 ];
 
 function Footer() {
-
-    
-
     return (
         <>
             <footer className="nn-bg-light-grid border-t border-[#5EE587]/10">
-                <div className="mx-auto max-w-7xl px-6 py-20">
+                <div className="mx-auto max-w-7xl px-6 py-10">
                     {/* Top Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
@@ -212,7 +209,7 @@ function Footer() {
 
                     {/* Bottom Section */}
                     <div className=" flex flex-col items-center justify-between gap-6 md:flex-row">
-                        <p className="text-base text-slate-500 font-inter tracking-wider">
+                        <p className="text-base text-slate-500 font-inter tracking-wider mt-4">
                             © {new Date().getFullYear()} Nextnix. All rights
                             reserved.
                         </p>
