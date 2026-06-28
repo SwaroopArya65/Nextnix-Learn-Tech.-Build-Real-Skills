@@ -48,92 +48,11 @@ const socialLinks = [
 
 function Footer() {
 
-    const handleSubscribe = () => {
-        const toastId = toast.loading(
-            "Opening YouTube Channel..."
-        );
-
-        setTimeout(() => {
-            toast.dismiss(toastId);
-
-            toast.success("Redirected successfully!");
-
-            window.open(
-                "https://www.youtube.com/@Nextnixtech",
-                "_blank",
-                "noopener,noreferrer"
-            );
-        }, 2000);
-    };
-
-    const handleTelegram = () => {
-        toast.success("Redirecting to Telegram Community...");
-
-        setTimeout(() => {
-            window.open(
-                "https://t.me/your-community-link",
-                "_blank",
-                "noopener,noreferrer"
-            );
-        }, 1500);
-    };
+    
 
     return (
         <>
-            <footer className="nn-bg-light-grid border-t border-[#5EE587]/10 mt-4">
-
-                <div className="relative -translate-y-12">
-                    <div className="mx-auto max-w-6xl overflow-hidden rounded-xl border border-[#5EE587]/20 bg-white/10 backdrop-blur-2xl shadow-[0_20px_60px_rgba(94,229,135,0.15)]">
-                        <div className="px-8 py-2 md:px-14 md:py-14">
-                            {/* Badge */}
-                            <div className="flex justify-center">
-                                <span className="inline-flex items-center gap-2 rounded-full border border-[#5EE587]/40 bg-[#5EE587]/10 px-5 py-2 text-sm font-medium font-inter text-[#051D67]">
-                                    🚀 Join Our Growing Community
-                                </span>
-                            </div>
-
-                            {/* Stats */}
-                            <div className="mt-4 grid gap-6 md:grid-cols-2">
-                                <div className="rounded-2xl border border-[#5EE587]/20 bg-white/10 p-3 text-center backdrop-blur-xl">
-                                    <p className="text-4xl font-bold font-poppins text-[#051D67]">
-                                        17+
-                                    </p>
-
-                                    <p className="mt-2 font-inter text-slate-600">
-                                        Learners already watching on YouTube
-                                    </p>
-                                </div>
-
-                                <div className="rounded-2xl border border-[#5EE587]/20 bg-white/10 p-3 text-center backdrop-blur-xl">
-                                    <p className="text-4xl">💬</p>
-
-                                    <p className="mt-2 font-inter text-slate-600">
-                                        Join Telegram Community to get help,
-                                        share progress, and grow together.
-                                    </p>
-                                </div>
-                            </div>
-
-                            {/* Buttons */}
-                            <div className="mt-4 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                                <button
-                                    onClick={handleSubscribe}
-                                    className="rounded-2xl bg-[#051D67] px-8 py-4 font-semibold font-inter text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#0A2B8F]"
-                                >
-                                    📹 Subscribe on YouTube
-                                </button>
-
-                                <button
-                                    onClick={handleTelegram}
-                                    className="rounded-2xl border border-[#5EE587]/40 bg-[#5EE587]/10 px-8 py-4 font-semibold font-inter text-[#051D67] transition-all duration-300 hover:-translate-y-1 hover:bg-[#5EE587]/20"
-                                >
-                                    💬 Join Telegram
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <footer className="nn-bg-light-grid border-t border-[#5EE587]/10">
                 <div className="mx-auto max-w-7xl px-6 py-20">
                     {/* Top Section */}
                     <motion.div

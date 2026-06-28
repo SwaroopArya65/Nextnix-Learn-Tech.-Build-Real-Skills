@@ -825,7 +825,7 @@ function Home() {
                                 {/* Badge */}
                                 <div className="inline-flex items-center gap-2 rounded-full border border-[#5EE587]/30 bg-[#5EE587]/10 px-4 py-2 text-sm font-medium font-inter tracking-wide text-[#5EE587] backdrop-blur-md">
                                     <Rocket size={16} />
-                                    Join the Next Generation of Tech Learners
+                                    Join Our Growing Community || Next Generation of Tech Learners
                                 </div>
 
                                 {/* Heading */}
@@ -866,7 +866,7 @@ function Home() {
                                         hover:shadow-[0_12px_40px_rgba(94,229,135,0.45)]
                                         "
                                     >
-                                        Start Learning
+                                        Subscribe on YouTube
                                         <ArrowRight size={20} />
                                     </button>
 
@@ -894,7 +894,7 @@ function Home() {
                                         "
                                     >
                                         <Play size={18} />
-                                        Subscribe on YouTube
+                                        Join Telegram
                                     </button>
                                 </div>
 
@@ -902,21 +902,21 @@ function Home() {
                                 <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-slate-300">
                                     <div className="flex items-center gap-2 tracking-wider font-inter">
                                         <Star size={16} className="text-[#5EE587]" />
-                                        <span>100% Beginner Friendly</span>
+                                        <span>17 + Learners already watching on YouTube</span>
                                     </div>
 
                                     <div className="flex items-center gap-2 tracking-wider font-inter">
                                         <Rocket size={16} className="text-[#5EE587]" />
-                                        <span>Project-Based Learning</span>
+                                        <span>Join Telegram Community to get Help</span>
                                     </div>
 
-                                    <div className="flex items-center gap-2 tracking-wider font-inter">
+                                    {/* <div className="flex items-center gap-2 tracking-wider font-inter">
                                         <Briefcase
                                             size={16}
                                             className="text-[#5EE587]"
                                         />
                                         <span>Career Focused</span>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </motion.div>
