@@ -69,7 +69,7 @@ function Navbar() {
                     <img src={logo} alt="Nextnix Logo" className="flex h-11 w-11 items-center justify-center" />
 
                     <div>
-                        <h1 className="text-lg font-bold font-inter text-[#051d67]">
+                        <h1 className="text-lg font-extrabold font-inter text-[#051d67]">
                             Nextnix
                         </h1>
 
