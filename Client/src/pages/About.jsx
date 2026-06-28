@@ -15,10 +15,11 @@ export default function About() {
       {/* SEO  */}
 
       <SEO
-        title="About Nextnix | Our Mission to Simplify Tech Learning"
-        description="Discover the story, mission, vision, and values behind Nextnix. Learn how we're helping beginners build real tech skills with practical learning."
-        keywords="About Nextnix, Mission, Vision, Founder, Tech Education, Learning Platform"
+        title="About Nextnix"
+        description="Know the story behind Nextnix and our mission to make quality tech education accessible to everyone."
+        keywords="About Nextnix, Mission, Vision"
         url="https://nextnix.netlify.app/about"
+        image="https://nextnix.netlify.app/logo.svg"
       />
 
       <div className="relative min-h-screen">

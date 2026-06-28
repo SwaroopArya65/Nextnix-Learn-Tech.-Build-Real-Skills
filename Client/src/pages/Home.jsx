@@ -229,9 +229,10 @@ function Home() {
             {/* SEO */}
             <SEO
                 title="Nextnix | Learn Tech. Build Real Skills."
-                description="Learn Coding, CCNA, Windows Administration, Career Guidance, and real-world projects with Nextnix. India's beginner-first tech learning platform."
-                keywords="Nextnix, Coding, Programming, MERN Stack, CCNA, Windows Administration, Career Guidance, Tech Learning, Web Development"
-                url="https://nextnix.netlify.app/home"
+                description="Learn Coding, CCNA, Windows Administration, Career Guidance and real-world tech skills with Nextnix."
+                keywords="Nextnix, Coding, CCNA, Career Guidance, Web Development"
+                url="https://nextnix.netlify.app/"
+                image="https://nextnix.netlify.app/logo.svg"
             />
 
             <div className="nn-bg-light-grid overflow-hidden">
