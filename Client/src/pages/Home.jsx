@@ -227,39 +227,11 @@ function Home() {
         <>
             {/* SEO */}
             <Helmet>
-                <title>
-                    Nextnix | Learn Tech. Build Real Skills.
-                </title>
-
-                <meta
-                    name="description"
-                    content="Learn Coding, CCNA, Windows Administration, and real-world tech skills with Nextnix."
-                />
-
-                <meta
-                    property="og:title"
-                    content="Nextnix | Learn Tech. Build Real Skills."
-                />
-
-                <meta
-                    property="og:description"
-                    content="Begin your tech journey with Coding, Networking, and System Administration courses."
-                />
-
-                <meta
-                    property="og:image"
-                    content="/logo.png"
-                />
-
-                {/* Basic Security */}
-                <meta
-                    httpEquiv="Referrer-Policy"
-                    content="strict-origin-when-cross-origin"
-                />
-
-                <meta
-                    httpEquiv="Permissions-Policy"
-                    content="camera=(), microphone=(), geolocation=()"
+                <SEO
+                    title="Nextnix | Learn Tech. Build Real Skills."
+                    description="Learn Coding, CCNA, Windows Administration, Career Guidance, and real-world projects with Nextnix. India's beginner-first tech learning platform."
+                    keywords="Nextnix, Coding, Programming, MERN Stack, CCNA, Windows Administration, Career Guidance, Tech Learning, Web Development"
+                    url="https://nextnix.netlify.app/home"
                 />
             </Helmet>
 
