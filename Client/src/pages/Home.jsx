@@ -238,26 +238,26 @@ function Home() {
                 {/* Hero Section */}
                 {/* ================================= */}
 
-                <section className="nn-bg-dark-grid flex min-h-[85vh] items-center py-28">
-                    <div className="mx-auto max-w-5xl px-6 text-center">
+                <section className="nn-bg-dark-grid flex min-h-screen items-center py-20 sm:py-24 md:py-28 lg:py-32">
+                    <div className="mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
+                        {/* Alert Badge */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="inline-flex items-center gap-3 rounded-full border border-[#5EE587]/30 bg-white/70 px-5 py-2 mb-5 shadow-lg backdrop-blur-md"
+                            className="mx-auto mb-6 flex w-full max-w-4xl items-center gap-2 rounded-full border border-[#5EE587]/30 bg-white/70 px-3 py-2 shadow-lg backdrop-blur-md sm:w-fit sm:px-5"
                         >
-                            <span className="flex items-center rounded-full bg-[#5EE587]/20 px-3 py-1 text-xs font-semibold text-[#051D67]">
+                            <span className="shrink-0 rounded-full bg-[#5EE587]/20 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#051D67] sm:text-xs">
                                 🚀 NEW
                             </span>
 
-                            {/* Scrolling Buttons */}
-                            <div className="w-96 overflow-hidden">
-                                <div className="animate-marquee flex w-max gap-3">
+                            <div className="min-w-0 flex-1 overflow-hidden">
+                                <div className="animate-marquee flex w-max gap-2 sm:gap-3">
                                     {[...announcements, ...announcements].map((item, index) => (
                                         <Link
                                             key={index}
                                             to={item.path}
-                                            className="animate-text-glow shrink-0 rounded-full border border-slate-200 bg-white/80 px-4 py-1.5 text-sm font-medium text-slate-700 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#5EE587] hover:bg-[#5EE587]/10 hover:text-[#051D67]"
+                                            className="animate-text-glow shrink-0 rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 text-xs font-medium text-slate-700 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#5EE587] hover:bg-[#5EE587]/10 hover:text-[#051D67] sm:px-4 sm:text-sm"
                                         >
                                             {item.title}
                                         </Link>
@@ -267,9 +267,11 @@ function Home() {
 
                             <ArrowRight
                                 size={16}
-                                className="text-[#051D67]"
+                                className="hidden shrink-0 text-[#051D67] sm:block"
                             />
                         </motion.div>
+
+                        {/* Heading */}
                         <motion.h1
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{
@@ -277,13 +279,14 @@ function Home() {
                                 y: 0,
                             }}
                             transition={{ duration: 0.6 }}
-                            className="mx-auto max-w-5xl text-6xl font-extrabold font-space-grotesk tracking-wide leading-[0.95] md:text-8xl text-[#051D67]"
+                            className="mx-auto max-w-6xl font-space-grotesk text-4xl font-extrabold leading-[1.02] tracking-tight text-[#051D67] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
                         >
                             Learn Tech.
                             <br />
                             Build Real Skills.
                         </motion.h1>
 
+                        {/* Paragraph */}
                         <motion.p
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
@@ -291,16 +294,19 @@ function Home() {
                                 delay: 0.3,
                                 duration: 0.6,
                             }}
-                            className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl font-inter tracking-wide"
+                            className="mx-auto mt-6 max-w-3xl px-2 font-inter text-base leading-7 tracking-wide text-slate-600 sm:text-lg md:mt-8 md:text-xl md:leading-8"
                         >
-                            From YouTube to classroom — India's beginner-first platform for real tech skills & real direction. 
-                            No experience needed. No expensive laptop needed. Just the will to learn — we'll handle the rest.
+                            From YouTube to classroom — India's beginner-first platform for
+                            real tech skills & real direction. No experience needed. No
+                            expensive laptop needed. Just the will to learn — we'll handle
+                            the rest.
                         </motion.p>
 
-                        <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+                        {/* Buttons */}
+                        <div className="mt-10 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center">
                             <button
                                 onClick={handleSubscribe}
-                                className="flex items-center justify-center gap-2 rounded-md border border-gray-300 px-4 py-3 font-semibold font-inter tracking-wide leading-0.5 transition bg-[#5EE587] text-[#051D67] hover:bg-[#4fd678] cursor-pointer"
+                                className="flex w-full items-center justify-center gap-2 rounded-lg border border-gray-300 bg-[#5EE587] px-6 py-4 font-inter font-semibold tracking-wide text-[#051D67] transition hover:bg-[#4fd678] sm:w-auto"
                             >
                                 <Play size={20} />
                                 Free learning on YouTube
@@ -308,26 +314,11 @@ function Home() {
 
                             <button
                                 onClick={handleSubscribe}
-                                className="flex items-center justify-center gap-2 rounded-md px-4 py-3 font-semibold font-inter tracking-wide leading-0.5 transition hover:bg-[#5EE587]/10 hover:border-[#5EE587] border border-[#051D67] bg-white text-[#051D67] cursor-pointer"
+                                className="flex w-full items-center justify-center gap-2 rounded-lg border border-[#051D67] bg-white px-6 py-4 font-inter font-semibold tracking-wide text-[#051D67] transition hover:border-[#5EE587] hover:bg-[#5EE587]/10 sm:w-auto"
                             >
                                 <Briefcase size={20} />
                                 Explore Services
                             </button>
-                        </div>
-
-                        {/* Feature Tags */}
-                        <div className="mt-12 flex flex-wrap items-center justify-center gap-4 animate-pulse">
-                            <span className="rounded-full border border-green-200 bg-white/70 px-4 py-2 text-sm font-medium text-gray-700 backdrop-blur-sm">
-                                🚀 Project-Based Learning
-                            </span>
-
-                            <span className="rounded-full border border-green-200 bg-white/70 px-4 py-2 text-sm font-medium text-gray-700 backdrop-blur-sm">
-                                🎯 Beginner Friendly
-                            </span>
-
-                            <span className="rounded-full border border-green-200 bg-white/70 px-4 py-2 text-sm font-medium text-gray-700 backdrop-blur-sm">
-                                💼 Career Focused
-                            </span>
                         </div>
                     </div>
                 </section>
