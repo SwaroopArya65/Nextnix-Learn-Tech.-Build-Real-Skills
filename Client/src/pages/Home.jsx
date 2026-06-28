@@ -227,14 +227,12 @@ function Home() {
     return (
         <>
             {/* SEO */}
-            <Helmet>
-                <SEO
-                    title="Nextnix | Learn Tech. Build Real Skills."
-                    description="Learn Coding, CCNA, Windows Administration, Career Guidance, and real-world projects with Nextnix. India's beginner-first tech learning platform."
-                    keywords="Nextnix, Coding, Programming, MERN Stack, CCNA, Windows Administration, Career Guidance, Tech Learning, Web Development"
-                    url="https://nextnix.netlify.app/home"
-                />
-            </Helmet>
+            <SEO
+                title="Nextnix | Learn Tech. Build Real Skills."
+                description="Learn Coding, CCNA, Windows Administration, Career Guidance, and real-world projects with Nextnix. India's beginner-first tech learning platform."
+                keywords="Nextnix, Coding, Programming, MERN Stack, CCNA, Windows Administration, Career Guidance, Tech Learning, Web Development"
+                url="https://nextnix.netlify.app/home"
+            />
 
             <div className="nn-bg-light-grid overflow-hidden">
                 {/* ================================= */}
