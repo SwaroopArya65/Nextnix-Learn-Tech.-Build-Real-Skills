@@ -22,6 +22,7 @@ import {
     PlayCircle,
     Briefcase,
 } from "lucide-react";
+import SEO from "../components/common/SEO";
 
 function Home() {
     const YOUTUBE_URL = "https://www.youtube.com/@Nextnixtech";
