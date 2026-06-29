@@ -6,6 +6,7 @@ export default function SEO({
     keywords = "",
     image = "https://nextnix.netlify.app/logo.svg",
     url = "https://nextnix.netlify.app",
+    robots = "index, follow",
 }) {
     return (
         <Helmet prioritizeSeoTags>
