@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 import AppRoutes from "./routes/AppRoutes";
+import ScrollToHash from "./components/common/ScrollToHash";
 
 function App() {
   return (
@@ -118,6 +119,7 @@ function App() {
 
         {/* Global Layout */}
         <div className="flex min-h-screen flex-col bg-white overflow-x-hidden">
+          <ScrollToHash />
           <Navbar />
 
           <main className="flex-1">

@@ -23,6 +23,7 @@ import {
     Briefcase,
 } from "lucide-react";
 import SEO from "../components/common/SEO";
+import ComingSoonModal from "../common/ComingSoonModal";
 
 function Home() {
     const YOUTUBE_URL = "https://www.youtube.com/@Nextnixtech";
@@ -81,23 +82,23 @@ function Home() {
     const announcements = [
         {
             title: "🎓 Live Classes",
-            path: "/services/live-classes",
+            path: "/services#service-cards",
         },
         {
             title: "💻 MERN Stack",
-            path: "/learn/mern-stack",
+            path: "/learn#featured-paths",
         },
         {
             title: "🌐 CCNA",
-            path: "/learn/ccna",
+            path: "/learn#featured-paths",
         },
         {
             title: "🖥️ Windows Admin",
-            path: "/learn/windows-admin",
+            path: "/learn#featured-paths",
         },
         {
             title: "🏆 Career Guidance",
-            path: "/services/career-guidance",
+            path: "/services#service-cards",
         },
     ];
 
@@ -135,7 +136,7 @@ function Home() {
             description:
                 "Learn modern programming through step-by-step tutorials and hands-on practice.",
             level: "Beginner → Advanced",
-            path: "/learn/coding",
+            path: "/learn#latest-tutorials",
         },
         {
             icon: Globe,
@@ -143,7 +144,7 @@ function Home() {
             description:
                 "Navigate your tech journey with expert guidance, placement tips, and career roadmaps.",
             level: "Beginner → Intermediate",
-            path: "/learn/ccna",
+            path: "/learn#learning-journey",
         },
         {
             icon: Monitor,
@@ -151,7 +152,7 @@ function Home() {
             description:
                 "Turn knowledge into experience by building practical, industry-inspired applications.",
             level: "Beginner → Advanced",
-            path: "/learn/windows-admin",
+            path: "/learn#latest-tutorials",
         },
     ];
 
@@ -302,7 +303,7 @@ function Home() {
                         <div className="mt-10 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center">
                             <button
                                 onClick={handleSubscribe}
-                                className="flex w-full items-center justify-center gap-2 rounded-md border border-gray-300 bg-[#5EE587] px-6 py-3 font-semibold font-inter tracking-wide text-[#051D67] transition hover:bg-[#4fd678] sm:w-auto"
+                                className="cursor-pointer flex w-full items-center justify-center gap-2 rounded-md border border-gray-300 bg-[#5EE587] px-6 py-3 font-semibold font-inter tracking-wide text-[#051D67] transition hover:bg-[#4fd678] sm:w-auto"
                             >
                                 <Play size={20} />
                                 Free learning on YouTube
@@ -310,7 +311,7 @@ function Home() {
 
                             <button
                                 onClick={handleSubscribe}
-                                className="flex w-full items-center justify-center gap-2 rounded-md border border-[#051D67] bg-white px-6 py-3 font-semibold font-inter tracking-wide text-[#051D67] transition hover:border-[#5EE587] hover:bg-[#5EE587]/10 sm:w-auto"
+                                className="cursor-pointer flex w-full items-center justify-center gap-2 rounded-md border border-[#051D67] bg-white px-6 py-3 font-semibold font-inter tracking-wide text-[#051D67] transition hover:border-[#5EE587] hover:bg-[#5EE587]/10 sm:w-auto"
                             >
                                 <Briefcase size={20} />
                                 Explore Services

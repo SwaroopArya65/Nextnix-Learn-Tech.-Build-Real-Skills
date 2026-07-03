@@ -92,7 +92,7 @@ const learningPaths = [
 
 export default function FeaturedPaths() {
     return (
-        <section className="py-24">
+        <section id="featured-paths" className="py-24">
 
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
 

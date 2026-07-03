@@ -42,7 +42,7 @@ const steps = [
 
 export default function LearningProcess() {
     return (
-        <section className="py-24">
+        <section id="learning-journey" className="py-24">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
                 {/* Heading */}

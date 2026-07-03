@@ -63,7 +63,7 @@ const services = [
 
 export default function ServiceCards() {
     return (
-        <section className="py-24">
+        <section id="service-cards" className="py-24">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
                 <div className="grid gap-8 lg:grid-cols-3">
