@@ -225,8 +225,8 @@ function Footer() {
                         </p>
 
                         {/* Social Icons */}
-                        <div className="flex items-center gap-3 rounded-full border border-[#5EE587]/15 bg-white/50 px-5 py-3 backdrop-blur-md">
-                            {[
+                        <div className="flex items-center gap-3 font-space-grotesk tracking-wider font-medium rounded-full border border-[#5EE587]/15 bg-white/50 px-5 py-3 backdrop-blur-md">
+                            {/* {[
                                 <Play size={22} />,
                                 <Code2 size={22} />,
                                 <Briefcase size={22} />,
@@ -238,7 +238,9 @@ function Footer() {
                                 >
                                     {icon}
                                 </button>
-                            ))}
+                            ))} */}
+
+                            Version : 1.10.12
                         </div>
                     </div>
                 </div>
