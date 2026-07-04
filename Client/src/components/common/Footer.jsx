@@ -213,6 +213,16 @@ function Footer() {
                             © {new Date().getFullYear()} Nextnix. All rights
                             reserved.
                         </p>
+                        <p className="text-base text-slate-500 font-inter tracking-wider mt-4">
+                            Last Updated On :  {new Date().toLocaleString("en-IN", {
+                                day: "2-digit",
+                                month: "long",
+                                year: "numeric",
+                                hour: "2-digit",
+                                minute: "2-digit",
+                                // second: "2-digit",
+                            })}
+                        </p>
 
                         {/* Social Icons */}
                         <div className="flex items-center gap-3 rounded-full border border-[#5EE587]/15 bg-white/50 px-5 py-3 backdrop-blur-md">

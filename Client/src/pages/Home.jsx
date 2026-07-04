@@ -23,7 +23,7 @@ import {
     Briefcase,
 } from "lucide-react";
 import SEO from "../components/common/SEO";
-import ComingSoonModal from "../common/ComingSoonModal";
+// import ComingSoonModal from "../common/ComingSoonModal";
 
 function Home() {
     const YOUTUBE_URL = "https://www.youtube.com/@Nextnixtech";
