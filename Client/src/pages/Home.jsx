@@ -23,6 +23,7 @@ import {
     Briefcase,
 } from "lucide-react";
 import SEO from "../components/common/SEO";
+import ActionButton from "../components/common/ActionButton";
 // import ComingSoonModal from "../common/ComingSoonModal";
 
 function Home() {
@@ -137,6 +138,7 @@ function Home() {
                 "Learn modern programming through step-by-step tutorials and hands-on practice.",
             level: "Beginner → Advanced",
             path: "/learn#latest-tutorials",
+            available: true,
         },
         {
             icon: Globe,
@@ -145,6 +147,7 @@ function Home() {
                 "Navigate your tech journey with expert guidance, placement tips, and career roadmaps.",
             level: "Beginner → Intermediate",
             path: "/learn#learning-journey",
+            available: false,
         },
         {
             icon: Monitor,
@@ -153,6 +156,7 @@ function Home() {
                 "Turn knowledge into experience by building practical, industry-inspired applications.",
             level: "Beginner → Advanced",
             path: "/learn#latest-tutorials",
+            available: false,
         },
     ];
 
@@ -589,8 +593,11 @@ function Home() {
                                                 {topic.level}
                                             </span>
 
-                                            <button
-                                                onClick={() => handleExplore(topic.path)}
+                                            <ActionButton
+                                                to={topic.path}
+                                                available={topic.available}
+                                                title={topic.title}
+                                                description={`${topic.title} is currently under development. It will be available soon.`}
                                                 className="
                                                 flex items-center gap-2
                                                 font-semibold font-inter tracking-wide
@@ -598,11 +605,13 @@ function Home() {
                                                 transition-all duration-300
                                                 group-hover:gap-3
                                                 cursor-pointer
-                                            "
+                                                "
                                             >
-                                                Explore
-                                                <ArrowRight size={18} />
-                                            </button>
+                                                <>
+                                                    Explore
+                                                    <ArrowRight size={18} />
+                                                </>
+                                            </ActionButton>
                                         </div>
                                     </motion.div>
                                 );

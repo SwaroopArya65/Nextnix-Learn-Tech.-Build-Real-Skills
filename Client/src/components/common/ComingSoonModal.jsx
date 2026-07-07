@@ -1,155 +1,113 @@
-import { X, Rocket, Bell, Sparkles } from "lucide-react";
+import { useEffect } from "react";
+import { X, Sparkles } from "lucide-react";
 
-export default function ComingSoonModal({
+const ComingSoonModal = ({
     isOpen,
     onClose,
-    title,
-    description,
-}) {
+    title = "Coming Soon",
+    description = "We're working hard to launch this feature soon.",
+}) => {
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") {
+                onClose();
+            }
+        };
+
+        if (isOpen) {
+            document.addEventListener("keydown", handleKeyDown);
+            document.body.style.overflow = "hidden";
+        }
+
+        return () => {
+            document.removeEventListener("keydown", handleKeyDown);
+            document.body.style.overflow = "auto";
+        };
+    }, [isOpen, onClose]);
+
     if (!isOpen) return null;
 
     return (
         <div
+            className="fixed inset-0 z-9999 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4"
             onClick={onClose}
-            className="fixed inset-0 z-9999 flex items-center justify-center bg-black/60 backdrop-blur-sm p-5"
         >
             <div
                 onClick={(e) => e.stopPropagation()}
-                className="relative w-full max-w-lg overflow-hidden rounded-3xl border border-white/10 bg-[#08142E] text-white shadow-2xl animate-[fadeIn_.3s_ease]"
+                className="relative w-full max-w-lg rounded-3xl bg-white shadow-2xl p-8 animate-[fadeIn_.25s_ease]"
             >
-                {/* Close */}
+
+                {/* Close Button */}
 
                 <button
                     onClick={onClose}
-                    className="absolute right-5 top-5 rounded-full p-2 transition hover:bg-white/10"
+                    className="absolute right-5 top-5 rounded-full p-2 text-gray-500 transition hover:bg-gray-100 hover:text-gray-800"
                 >
-                    <X size={20} />
+                    <X size={22} />
                 </button>
 
-                {/* Header */}
+                {/* Icon */}
 
-                <div className="bg-linear-to-r from-blue-600 via-indigo-600 to-cyan-500 p-8 text-center">
+                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-linear-to-r from-blue-600 to-green-500 text-white shadow-lg">
 
-                    <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-white/20">
+                    <Sparkles size={34} />
 
-                        <Rocket
-                            size={42}
-                            className="text-white"
-                        />
+                </div>
 
-                    </div>
+                {/* Heading */}
 
-                    <h2 className="text-3xl font-bold">
+                <h2 className="text-center text-3xl font-bold text-gray-900">
 
-                        Coming Soon 🚀
+                    {title}
 
-                    </h2>
+                </h2>
 
-                    <p className="mt-2 text-blue-100">
+                {/* Description */}
 
-                        We're building something amazing.
+                <p className="mt-4 text-center leading-7 text-gray-600">
+
+                    {description}
+
+                </p>
+
+                {/* Divider */}
+
+                <div className="my-8 h-px bg-gray-200"></div>
+
+                {/* Bottom Text */}
+
+                <div className="space-y-2 text-center">
+
+                    <p className="font-semibold text-blue-700">
+
+                        🚀 Coming Soon
+
+                    </p>
+
+                    <p className="text-sm text-gray-500">
+
+                        We're building something amazing for the Nextnix community.
+                        Stay connected and be the first to explore it.
 
                     </p>
 
                 </div>
 
-                {/* Content */}
+                {/* Button */}
 
-                <div className="space-y-6 p-8">
+                <button
+                    onClick={onClose}
+                    className="mt-8 w-full rounded-xl bg-linear-to-r from-blue-600 to-green-500 py-3 font-semibold text-white transition hover:opacity-90 cursor-pointer"
+                >
 
-                    <div>
+                    Got it
 
-                        <h3 className="mb-3 text-2xl font-semibold">
-
-                            {title}
-
-                        </h3>
-
-                        <p className="text-gray-300 leading-7">
-
-                            {description}
-
-                        </p>
-
-                    </div>
-
-                    {/* Progress */}
-
-                    <div>
-
-                        <div className="mb-2 flex items-center justify-between text-sm">
-
-                            <span className="flex items-center gap-2">
-
-                                <Sparkles size={16} />
-
-                                Development Progress
-
-                            </span>
-
-                            <span>80%</span>
-
-                        </div>
-
-                        <div className="h-3 overflow-hidden rounded-full bg-gray-700">
-
-                            <div className="h-full w-4/5 rounded-full bg-linear-to-r from-cyan-400 to-blue-500"></div>
-
-                        </div>
-
-                    </div>
-
-                    {/* Features */}
-
-                    <div className="rounded-2xl bg-white/5 p-5">
-
-                        <h4 className="mb-4 font-semibold">
-
-                            What's Coming
-
-                        </h4>
-
-                        <ul className="space-y-3 text-gray-300">
-
-                            <li>✔ Practical Learning Experience</li>
-
-                            <li>✔ Industry Expert Sessions</li>
-
-                            <li>✔ Certification</li>
-
-                            <li>✔ Lifetime Learning Support</li>
-
-                        </ul>
-
-                    </div>
-
-                    {/* Footer */}
-
-                    <div className="flex flex-col gap-3 sm:flex-row">
-
-                        <button
-                            onClick={onClose}
-                            className="flex-1 rounded-xl border border-white/10 px-5 py-3 font-medium transition hover:bg-white/10"
-                        >
-                            Continue Browsing
-                        </button>
-
-                        <a
-                            href="https://youtube.com"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 font-medium transition hover:bg-blue-700"
-                        >
-                            <Bell size={18} />
-
-                            Subscribe Updates
-                        </a>
-
-                    </div>
-
-                </div>
+                </button>
 
             </div>
         </div>
     );
-}
+};
+
+export default ComingSoonModal;

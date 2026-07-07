@@ -240,7 +240,7 @@ function Footer() {
                                 </button>
                             ))} */}
 
-                            Version : 1.10.12
+                            Version : 1.11.12
                         </div>
                     </div>
                 </div>
