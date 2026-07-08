@@ -57,7 +57,7 @@ const ComingSoonModal = ({
 
                 {/* Heading */}
 
-                <h2 className="text-center text-3xl font-bold text-gray-900">
+                <h2 className="text-center text-3xl font-bold text-[#051D67] font-space-grotesk tracking-wide">
 
                     {title}
 
@@ -65,7 +65,7 @@ const ComingSoonModal = ({
 
                 {/* Description */}
 
-                <p className="mt-4 text-center leading-7 text-gray-600">
+                <p className="mt-4 text-center leading-7 text-gray-600 font-inter tracking-wide">
 
                     {description}
 
@@ -79,13 +79,13 @@ const ComingSoonModal = ({
 
                 <div className="space-y-2 text-center">
 
-                    <p className="font-semibold text-blue-700">
+                    <p className="font-semibold font-space-grotesk tracking-wide text-[#5EE587]">
 
                         🚀 Coming Soon
 
                     </p>
 
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm leading-7 text-gray-600 font-inter tracking-wider">
 
                         We're building something amazing for the Nextnix community.
                         Stay connected and be the first to explore it.
@@ -98,10 +98,10 @@ const ComingSoonModal = ({
 
                 <button
                     onClick={onClose}
-                    className="mt-8 w-full rounded-xl bg-linear-to-r from-blue-600 to-green-500 py-3 font-semibold text-white transition hover:opacity-90 cursor-pointer"
+                    className="mt-8 w-full rounded-xl bg-linear-to-r from-blue-600 to-green-500 py-3 font-semibold font-space-grotesk tracking-wide text-white transition hover:opacity-90 cursor-pointer"
                 >
 
-                    Got it
+                    Got it, Submit
 
                 </button>
 

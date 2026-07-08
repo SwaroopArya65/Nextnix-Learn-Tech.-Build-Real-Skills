@@ -167,6 +167,7 @@ function Home() {
             description: "Master programming fundamentals and build modern web applications with beginner-friendly tutorials.",
             playlistUrl:
                 "https://www.youtube.com/playlist?list=PLgR80RvbSd3Kvu4RaAwcShZvXOiFxyEZw",
+            available: false,
         },
         {
             title: "Career Guidance & Placements",
@@ -174,6 +175,7 @@ function Home() {
             description: "Learn career planning, placement preparation, interview tips, and choose the right path in tech.",
             playlistUrl:
                 "https://www.youtube.com/playlist?list=PLgR80RvbSd3K8gSFTTBxiifPX5sGtki03",
+            available: false,
         },
         {
             title: "Real Project Explanations",
@@ -181,6 +183,7 @@ function Home() {
             description: "Build real-world projects from scratch and understand how professional applications are developed.",
             playlistUrl:
                 "https://youtube.com/playlist?list=CCNA_PLAYLIST_ID",
+            available: false,
         },
     ];
 
@@ -656,13 +659,17 @@ function Home() {
                                     </div>
 
                                     <div className="p-8">
-                                        <h3
+                                        <ActionButton
                                             onClick={() =>
                                                 handlePlaylistOpen(
                                                     video.title,
                                                     video.playlistUrl
                                                 )
                                             }
+                                            to={video.path}
+                                            available={video.available}
+                                            title={video.title}
+                                            description={`${video.title} is currently under development. It will be available soon.`}
                                             className="
                                             text-xl
                                             font-semibold
@@ -675,8 +682,12 @@ function Home() {
                                             hover:text-[#5EE587]
                                             "
                                         >
-                                            {video.title}
-                                        </h3>
+                                            <>
+                                                {/* Explore
+                                                <ArrowRight size={18} /> */}
+                                                {video.title}
+                                            </>
+                                        </ActionButton>
 
                                         <p className="mx-auto mt-6 max-w-xl text-lg font-inter tracking-wide leading-8 text-slate-600">
                                             {video.description}
