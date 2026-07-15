@@ -82,24 +82,32 @@ function Home() {
 
     const announcements = [
         {
-            title: "🎓 Live Classes",
-            path: "/services#service-cards",
+            title: "🚀 Beginner Friendly",
+            path: "/about#why-nextnix"
         },
         {
-            title: "💻 MERN Stack",
-            path: "/learn#featured-paths",
+            title: "📚 Learn Tech Skills",
+            path: "/learn#latest-tutorials",
         },
         {
-            title: "🌐 CCNA",
-            path: "/learn#featured-paths",
+            title: "🧭 Career Roadmaps",
+            path: "#",
         },
         {
-            title: "🖥️ Windows Admin",
-            path: "/learn#featured-paths",
+            title: "🖥️ Real Projects",
+            path: "https://github.com/aryaswaroop",
         },
         {
-            title: "🏆 Career Guidance",
-            path: "/services#service-cards",
+            title: "🎯 Interview Preparation",
+            path: "#",
+        },
+        {
+            title: "💼 Job Ready Skills",
+            path: "#",
+        },
+        {
+            title: "📱 Learn on Mobile",
+            path: "#",
         },
     ];
 
@@ -321,7 +329,7 @@ function Home() {
                                 className="cursor-pointer flex w-full items-center justify-center gap-2 rounded-md border border-[#051D67] bg-white px-6 py-3 font-semibold font-inter tracking-wide text-[#051D67] transition hover:border-[#5EE587] hover:bg-[#5EE587]/10 sm:w-auto"
                             >
                                 <Briefcase size={20} />
-                                Explore Services
+                                Start Your Learning Journey
                             </button>
                         </div>
 

@@ -52,7 +52,7 @@ const features = [
 
 export default function WhyNextnix() {
     return (
-        <section className="py-24">
+        <section id="why-nextnix" className="py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
                 {/* Heading */}
