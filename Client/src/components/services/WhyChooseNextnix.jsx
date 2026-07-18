@@ -49,7 +49,7 @@ const reasons = [
 
 export default function WhyChooseNextnix() {
     return (
-        <section className="py-24">
+        <section id="why-choose-nextnix" className="py-24">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
                 {/* Heading */}

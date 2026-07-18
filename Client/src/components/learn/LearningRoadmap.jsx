@@ -50,7 +50,7 @@ const roadmap = [
 
 export default function LearningRoadmap() {
     return (
-        <section className="py-24">
+        <section id="roadmap" className="py-24">
             <div className="mx-auto max-w-6xl px-6">
 
                 {/* Heading */}

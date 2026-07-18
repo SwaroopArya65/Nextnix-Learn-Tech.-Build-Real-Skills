@@ -14,6 +14,7 @@ import {
     FolderKanban,
     Map,
 } from "lucide-react";
+import { VERSION_INFO } from "../../config/version";
 
 const exploreLinks = [
     { name: "Home", path: "/" },
@@ -214,14 +215,15 @@ function Footer() {
                             reserved.
                         </p>
                         <p className="text-base text-slate-500 font-inter tracking-wider mt-4">
-                            Last Updated On :  {new Date().toLocaleString("en-IN", {
+                            {/* Last Updated On :  {new Date().toLocaleString("en-IN", {
                                 day: "2-digit",
                                 month: "long",
                                 year: "numeric",
                                 hour: "2-digit",
                                 minute: "2-digit",
-                                // second: "2-digit",
-                            })}
+                                second: "2-digit",
+                            })} */}
+                            Last Updated :- {VERSION_INFO.lastUpdated}
                         </p>
 
                         {/* Social Icons */}
@@ -240,7 +242,7 @@ function Footer() {
                                 </button>
                             ))} */}
 
-                            Version : 1.11.13
+                            Version : {VERSION_INFO.version}
                         </div>
                     </div>
                 </div>

@@ -91,7 +91,7 @@ function Home() {
         },
         {
             title: "🧭 Career Roadmaps",
-            path: "#",
+            path: "/learn#roadmap",
         },
         {
             title: "🖥️ Real Projects",
@@ -99,15 +99,15 @@ function Home() {
         },
         {
             title: "🎯 Interview Preparation",
-            path: "#",
+            // path: "#",
         },
         {
             title: "💼 Job Ready Skills",
-            path: "#",
+            path: "/learn#latest-tutorials",
         },
         {
             title: "📱 Learn on Mobile",
-            path: "#",
+            // path: "/learn#latest-tutorials",
         },
     ];
 
@@ -198,45 +198,52 @@ function Home() {
     const services = [
         {
             icon: MonitorPlay,
-            title: "Live Classes",
+            title: "Start Learning for Free",
             description:
-                "Learn directly from experienced instructors through live, interactive online sessions.",
+                "Learn tech skills from scratch with beginner-friendly content designed to build real-world knowledge and confidence.",
             features: [
-                "Live Q&A Sessions",
-                "Project-Based Learning",
-                "Community Support",
+                "Learn from Zero",
+                "Find Your Career Roadmap",
+                "Build Real Projects",
+                "Crack Your First Interview",
+                "Learn on Mobile",
+                "New Tutorials Every Week",
             ],
-            status: "Enroll Now",
+            status: "Explore Free Learning",
             buttonText: "Join Live Batch",
-            path: "/services/live-classes",
+            path: "/services#service-cards"
         },
-        {
-            icon: GraduationCap,
-            title: "College Workshops",
-            description:
-                "Practical workshops conducted in colleges to bridge the gap between academics and industry.",
-            features: [
-                "Hands-on Sessions",
-                "Industry Experts",
-                "Certification",
-            ],
-            status: "Join Waitlist",
-            buttonText: "Request Workshop",
-            path: "/services/college-workshops",
-        },
+        // {
+        //     icon: GraduationCap,
+        //     title: "College Workshops",
+        //     description:
+        //         "Practical workshops conducted in colleges to bridge the gap between academics and industry.",
+        //     features: [
+        //         "Hands-on Sessions",
+        //         "Industry Experts",
+        //         "Certification",
+        //     ],
+        //     status: "Join Waitlist",
+        //     buttonText: "Request Workshop",
+        //     path: "/services/college-workshops",
+        // },
         {
             icon: Building2,
-            title: "Corporate Training",
+            title: "Grow Faster with Premium Learning",
             description:
-                "Upskill teams with customized training programs tailored to industry requirements.",
+                "Accelerate your career through personalized guidance, live interaction, and practical training designed for students and professionals.",
             features: [
                 "Customized Curriculum",
-                "Team Training",
-                "Professional Certification",
+                "Learn with Industry Mentors",
+                "Build Portfolio Projects",
+                "Resume & LinkedIn Review",
+                "Mock Interviews",
+                "Certification Support",
+                "Personalized Career Guidance",
             ],
-            status: "Join Watilist",
+            status: "Explore Premium",
             buttonText: "Contact Us",
-            path: "/services/corporate-training",
+            path: "/services#why-choose-nextnix",
         },
     ];
 
@@ -325,7 +332,7 @@ function Home() {
                             </button>
 
                             <button
-                                onClick={handleSubscribe}
+                                onClick={handleExplore.bind(null, "/services")}
                                 className="cursor-pointer flex w-full items-center justify-center gap-2 rounded-md border border-[#051D67] bg-white px-6 py-3 font-semibold font-inter tracking-wide text-[#051D67] transition hover:border-[#5EE587] hover:bg-[#5EE587]/10 sm:w-auto"
                             >
                                 <Briefcase size={20} />
@@ -731,16 +738,16 @@ function Home() {
                             </span>
 
                             <h2 className="mt-6 text-4xl font-semibold font-space-grotesk tracking-wide text-[#051D67] md:text-5xl">
-                                Helping You
+                                From Free Learning
                                 <br />
-                                Learn Beyond YouTube.
+                                to Professional Training
                             </h2>
                             <p className="mx-auto mt-6 max-w-2xl text-lg font-space-grotesk tracking-wide text-slate-600">
                                 Whether you're an individual learner, a college, or an organization, Nextnix offers practical learning experiences designed to build real-world skills.
                             </p>
                         </div>
 
-                        <div className="mt-20 grid gap-8 md:grid-cols-3">
+                        <div className="mt-20 grid gap-8 md:grid-cols-2">
                             {services.map((service, index) => {
                                 const Icon = service.icon;
 
@@ -770,7 +777,7 @@ function Home() {
                                             {service.features.map((feature, i) => (
                                                 <li
                                                     key={i}
-                                                    className="flex items-center gap-3 text-sm font-inter text-slate-700"
+                                                    className="flex items-center gap-3 text-md font-inter text-slate-700 tracking-wide"
                                                 >
                                                     <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#5EE587]/20 text-[#051D67]">
                                                         ✓
@@ -783,7 +790,7 @@ function Home() {
                                         {/* Footer */}
                                         <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 
-                                            <span className="inline-flex w-fit items-center justify-center rounded-full bg-[#5EE587]/15 px-4 py-2 text-sm font-medium font-inter text-[#051D67]">
+                                            <span className="inline-flex w-fit items-center justify-center rounded-full bg-[#5EE587]/15 px-4 py-2 text-sm font-medium tracking-wide font-inter text-[#051D67]">
                                                 {service.status}
                                             </span>
 
